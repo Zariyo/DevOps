@@ -1,0 +1,5 @@
+Docker run tworzy obraz i uruchamia jako nowy kontener, a docker start uruchamia kontener po danej nazwie, wymaga wczesniejszego stworzenia i nazwania kontenera
+
+docker start zwyczajnie uruchamia kontener w dockerze, a docker start -a uruchamia kontener oraz wypisuje w konsoli wszystkie sygnaly i bledy.
+
+docker rm usuwa kontenery o podanych nazwach, a docker prune usuwa wszystkie nieaktywne kontenery, obrazy oraz zwiazany z nimi cache
