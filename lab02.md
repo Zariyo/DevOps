@@ -13,8 +13,8 @@ touch readme.txt
 echo "My first file" >> readme.txt
 exit
 docker run -it busybox
-// Podczas uruchomienia taką komendą, plik nie będzie istniał, bo komenda docker run stworzy nowy kontener busybox, w którym nie będzie wcześniej utworzonych plików.
-// Gdyby uruchomić docker exec -it "hardcore_jemison" i sprawdzić czy istnieje plik, to byłby tam bo jest to kontener w którym go utworzyliśmy
+> Podczas uruchomienia taką komendą, plik nie będzie istniał, bo komenda docker run stworzy nowy kontener busybox, w którym nie będzie wcześniej utworzonych plików.
+> Gdyby uruchomić docker exec -it "hardcore_jemison" i sprawdzić czy istnieje plik, to byłby tam bo jest to kontener w którym go utworzyliśmy
 
 ## 5.
 docker exec -it "hardcore_jemison" touch createdFile.txt
