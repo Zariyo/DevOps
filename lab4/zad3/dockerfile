@@ -1,0 +1,6 @@
+FROM node:14
+WORKDIR /usr/src/my_node_app
+COPY /app ./
+RUN npm install
+EXPOSE 3100
+CMD ["npm", "start"]
