@@ -1,0 +1,1 @@
+Kontener nginx jest podlaczony do sieci bridge
