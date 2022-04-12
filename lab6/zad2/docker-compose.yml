@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+  api:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    environment:
+      - REDISPORT=6379
+    ports:
+      - 8000:6379
