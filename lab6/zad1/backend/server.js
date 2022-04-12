@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log('Listening on port 5000');
+  console.log('Listening on port ' + PORT);
 });
