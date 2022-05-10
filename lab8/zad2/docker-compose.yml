@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod-2
+spec:
+  containers:
+  - name: my-pod-container-2
+    image: nginx:alpine
+    lifecycle:
+      postStart:
+        exec:
+          command: ["/bin/sh", "-c", "wget localhost:80"]

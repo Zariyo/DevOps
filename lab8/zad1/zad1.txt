@@ -1,0 +1,2 @@
+kubectl apply -f ./docker-compose.yml  -- tworzy pod z kontenerem z pliku .yml
+kubectl exec -it my-pod sh  -- uruchamia konsole w podzie.
