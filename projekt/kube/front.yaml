@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+  labels:
+    app: front
+
+spec:
+  selector:
+    matchLabels:
+      app: front
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+        - name: front-pod
+          image: wiktorplu/front-app:1.7.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: API_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: configmap
+                  key: API_PORT
+            - name: SERVER_IP
+              valueFrom:
+                configMapKeyRef:
+                  name: configmap
+                  key: SERVER_IP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-service-clusterip
+
+spec:
+  type: ClusterIP
+  selector:
+    app: front
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+   
