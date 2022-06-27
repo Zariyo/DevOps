@@ -1,0 +1,31 @@
+{
+	"movies": 
+[
+	{
+		"_id": "61dc95c73916889fd4000000",
+		"name": "Iniemamocni",
+		"genre": ["Akcja","Animacja"],
+		"releaseDate": "2020-12-12",
+		"director": "Mike Wazowski",
+		"scores": [3,2,5],
+		"imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Symbol_from_The_Incredibles_logo.svg/1200px-Symbol_from_The_Incredibles_logo.svg.png"
+	},
+	{
+		"_id": "61dc96f8edbc9f1c04000000",
+		"name": "Diuna",
+		"genre": ["Fabularny","Akcja"],
+		"releaseDate": "2020-12-12",
+		"director": "Jan Kowalski",
+		"scores": [5,5,4]
+	},
+	{
+		"_id": "61dc97112c23c8e045000000",
+		"name": "Shrek",
+		"genre": ["Animacja","Akcja","Fantasy"],
+		"releaseDate": "2020-12-14",
+		"director": "Adam Kowal",
+		"scores": [5,5,5]
+	}
+	
+]
+}
