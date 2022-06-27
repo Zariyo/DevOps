@@ -36,6 +36,9 @@ Porty w formacie Baza : Port wewnętrzny : Port udostępniony
 - Redis : 6379 : 30637
 - Api : 5000 : 30500
 
+Do zarządzania trwałymi wolumenami skorzystałem z mechanizmu persistentVolume oraz persistentVolumeClaim (pv, pvc)  
+Któremu dałem 128MiB pamięci, oraz korzystała z niego baza mongo
+
 #### Stworzone przeze mnie aplikacje front-app i backend-app są dostępne na dockerhub:
 https://hub.docker.com/u/wiktorplu
 
@@ -54,3 +57,4 @@ przykładowo http://project-k8s-app.com:30500/movies
 - https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/#before-you-begin
 - https://kubernetes.github.io/ingress-nginx/deploy/
 - https://nirajsonawane.github.io/2020/04/25/Deploy-React-Spring-Boot-MongoDB-Fullstack-application-on-Kubernetes/
+- https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
